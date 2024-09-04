@@ -4,15 +4,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-
-// const configuration = new Configuration({
-//     organization: "org-4AAfn1YDnUqmEcRXtKvUsKiF",
-//     apiKey: "sk-sDqQ4HMU8XQjiSNPZe_7N6rWzwG-7qtrxtfkCencBmT3BlbkFJe3hI33VYODMJMYPlbtKj6PbId-6zO78z_-bidZe1kA",
-// });
-
 const openai = new OpenAI();
-
-// const openai = new OpenAIApi(configuration);
 
 const app = express();
 const port = 3000;
