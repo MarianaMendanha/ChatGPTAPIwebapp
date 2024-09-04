@@ -1,0 +1,51 @@
+// comandos:
+//  npm init -y para criar um package.json (se nao existir)
+//  node index.js para rodar o codigo no terminal
+//  npx tsc para transformar os arquivos Typescript em Javascript
+//  npx tsx caminho\arquivo.ts para executar como js por debaixo dos panos
+//  npx tsx watch caminho\arquivo.ts para ficar escutando as mudanças nos arquivos e recompilar automaticamente
+//  npm run dev script criado no  pacakge.json que executa a funcao acima
+//  npm i fastify instalação do micro framework Fastify (express é outro)
+//  node -h  para ver as opcoes da linha de comando (lista de flags)
+//  npx prisma migrate dev varredura no schema prisma e faz "commit" das mudancas no banco
+//  npx prisma studio ferramenta para visualizar banco de dados
+//  npm i zod biblioteca especializada em validaçao
+
+
+
+// // Rota da home
+// app.get('/', () => {
+//     return 'Hellou da Mari'
+// })
+
+// app.get('/teste', () => {
+//     return 'Teste'
+// })
+
+
+
+Em uma API:
+    -Métodos HTTP: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS...
+    -Corpo da requisição (request body [post,put])
+    -Parâmetros de busca (Search parameters / Query parameters) 'http://localhost:3333/users?name=Diego' 
+    -Parâmetros de rota (Route Params) -> Identificação de recursos 'DELETE http://localhost:3333/users/5' 
+    -Cabeçalhos (Headers) -> Contexto
+
+Banco de dados:
+    Formas de conexão
+        -Driver Nativo
+        -Query Builders
+        -ORM -> prisma(Javascript) SQLAlchemy(Python) Django(Python)
+
+Status Code:
+    - xx1 => Algo foi criado
+    - 10x Informational -> Processamento em andamento
+    - 20x => Sucesso
+    - 30x => Redirecionamento
+    - 40x => Erro do cliente (erro de alguma info enviada para quem faz chamada a API)
+    - 50x => Erro do servidor (erro independente do que é enviado para o servidor)
+
+Ferramentas:
+    - Nano id: cria ids com caracteres escolhicos e com número  de letras definido
+    - Faker: Gera informações fake
+    -  
